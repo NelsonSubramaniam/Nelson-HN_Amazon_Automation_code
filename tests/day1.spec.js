@@ -9,5 +9,7 @@ test('day1 ', async ({ page }) => {
     await page.locator('button[type="submit"]').click();  
     console.log("Changes Made")  
     console.log("Changes made for second time")
+    console.log("Changes made for third time")
     
+
 })
