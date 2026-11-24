@@ -22,7 +22,7 @@ test('login page', async({page}) => {
 })
 
 
-test('fixtures', async({browser})=>{
+test.only('fixtures', async({browser})=>{
     const context1 = await browser.newContext();
     const page1 = await context1.newPage();
     await page1.goto("https://www.flipkart.com/");
@@ -34,4 +34,5 @@ test('fixtures', async({browser})=>{
     const context2 = await browser.newContext();
     const myntra = await context2.newPage();
     await myntra.goto("https://www.myntra.com/");
+
 })
